@@ -1,0 +1,202 @@
+.weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  color: #ddd;
+
+  background-color: #020120;
+}
+
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #020120;
+}
+
+.weather-search {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.weather-search > form > input {
+  padding: 10px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #777;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+.weather-search > form > input:focus {
+  border: 1px solid aqua;
+}
+
+.weather-search > form > button {
+  display: none;
+}
+
+.weather-current {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.weather-current > h4 {
+  text-align: center;
+  font-size: 2.1rem;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.weather-current > small {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.weather-info {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: space-around;
+}
+
+.weather-temp {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-temp > p {
+  font-size: 4.1rem;
+  text-shadow: 2px 2px #ddd;
+  color: #fff;
+}
+
+.weather-min-max {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.weather-max {
+  display: flex;
+}
+
+h4 {
+  text-align: left;
+}
+
+.weather-hourly-container {
+  display: flex;
+  width: 100%;
+  overflow: scroll;
+  margin-top: 20px;
+  -ms-overflow-style: none;
+  scrollbar-width: 0;
+  padding: 10px 0px 10px 0px;
+  align-items: center;
+  box-shadow: 8px 8px 8px -8px #7d2ae8;
+  background-color: #7c2ae811;
+}
+
+.weather-hourly-container::-webkit-scrollbar {
+  display: none;
+}
+
+.weather-hourly-container > .weather-hourly-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  color: #ddd;
+  width: 100%;
+}
+
+.weather-hourly-info > img {
+  width: 60px;
+}
+
+.weather-daily-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.weather-daily-container::-webkit-scrollbar {
+  display: none;
+}
+
+.weather-daily-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.weather-daily-info > img {
+  width: 100px;
+}
+
+.weather-daily-info > .day {
+  font-size: 2.1rem;
+}
+
+.weather-hourly-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.weather-daily-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 100%;
+  overflow: scroll;
+  margin-top: 20px;
+}
+
+.weather-daily-content::-webkit-scrollbar {
+  display: none;
+}
+
+.weather-hourly-data {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+form > select {
+  margin-left: 5px;
+  padding: 10px;
+  border: 1px solid #777;
+  outline: none;
+  background-color: transparent;
+  color: #ddd;
+}
+
+form > select > option {
+  background-color: transparent;
+  color: #020120;
+  font-size: 1.1rem;
+}
