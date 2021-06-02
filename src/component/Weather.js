@@ -3,6 +3,7 @@ import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
 import "./css/Weather.css";
 import languages from "./languages";
+import creds from "../creds.json";
 
 function Weather() {
   const [dataAll, setData] = useState({});
@@ -18,7 +19,7 @@ function Weather() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (search !== "") {
-      const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&lang=${lang}&appid=28041a492b1aafbce1f1146d76d56c23
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&lang=${lang}&appid=${creds.api}
 
   `;
 
@@ -40,7 +41,7 @@ function Weather() {
     console.log(base);
   }
 
-  const api = "28041a492b1aafbce1f1146d76d56c23";
+  const api = creds.api;
   const BASE_URL = "https://api.openweathermap.org/data/2.5/onecall?";
 
   function displayResults(res) {
